@@ -7,7 +7,7 @@ p{
 }
 
 header {
-    width:100%;
+    width:100vw;
     background-color: black;
     color:white;
     text-align: center;
@@ -16,7 +16,7 @@ header h1{
     padding:1em;
 }
 .orange{
-    color: orange;
+    color: rgb(205, 146, 37);
 }
 nav ul, .social {
     display: flex;
@@ -35,30 +35,29 @@ nav ul li a {
 main{
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    margin: auto 0 auto 0;
 }
 #intro{
-    width:40%;
+    width:90vw;
     line-height: 100px;
-    margin-left:35%;
-    margin-right:auto;
 }
 #intro h1{
+    position: relative;
     font-size: 3em;
     display: block;
     max-width: 1920px;
+    width:70%;
     text-align: left;
+    margin:auto;
 } 
 h1 span .title{
     font-weight: 700;
 }
 .flip-container{
-    position: relative;
     display: inline-block;
-    width: 80%;
+    width: 50%;
     height: 1.5em;
 }
 .flip{
@@ -82,7 +81,7 @@ h1 span .title{
     animation-delay: 20s;
 }
 .mom{
-    animation-delay: 50s;
+    animation-delay: 25s;
 }
 @keyframes rotate-word{
     0%{opacity:0;}
@@ -96,7 +95,6 @@ h1 span .title{
     100%{opacity:0;}
 }
     
-
 .flip-ploy ::after{
     transform:translateX(5px);
     content : "";
@@ -106,10 +104,42 @@ h1 span .title{
     margin: 10px;
     padding: 10px;
 }
+
+#about{
+    width:90vw;
+    background-color: rgb(205, 146, 37);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    margin:auto 0 auto 0;
+}
+#container-about h1{
+    font-size: 2.5rem;
+    text-align: left;
+    margin:1rem;
+}
+
+#container-about p{
+    font-size: 1.5rem;
+    text-align: left;
+    margin:1rem;
+}
 #portrait{
     width: 250px;
     height: auto;
     border-radius: 50%;
+    margin:auto;
+}
+#container-photo{
+    width: 250;
+    margin:auto;
+}
+#container-about{
+    width:70%;
+    margin:auto;
 }
 .icons-container{
     display: flex;
